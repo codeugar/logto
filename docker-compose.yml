@@ -4,7 +4,7 @@ services:
       postgres:
         condition: service_healthy
     image: svhd/logto:1.22.0
-    entrypoint: ["sh", "-c", "npm run cli db seed -- --swe && npm start"]
+    entrypoint: ["sh", "-c", "sleep 5 && npm run cli db seed -- --swe && npm start"]
     ports:
       - 3001
       - 3002
