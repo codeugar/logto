@@ -11,7 +11,7 @@ services:
 
     environment:
       TRUST_PROXY_HEADER: 1
-      DB_URL: postgres://logto:${LOGTO_POSTGRES_PASSWORD}@postgres:5432/logto
+      DB_URL: postgres://logto:scgaekpikllc0yuw@postgres:5432/logto
       ENDPOINT: ${LOGTO_ENDPOINT}
       ADMIN_ENDPOINT: ${LOGTO_ADMIN_ENDPOINT}
     volumes:
