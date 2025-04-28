@@ -4,7 +4,7 @@ services:
       postgres:
         condition: service_healthy
     image: svhd/logto:1.22.0
-    entrypoint: ["sh", "-c", "sleep 5 && npm start"]
+    entrypoint: ["sh", "-c", "sleep 50 && npm start"]
     ports:
       - 3001
       - 3002
@@ -22,7 +22,7 @@ services:
 
     environment:
       POSTGRES_USER: logto
-      POSTGRES_PASSWORD: ${LOGTO_POSTGRES_PASSWORD}
+      POSTGRES_PASSWORD: scgaekpikllc0yuw
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
